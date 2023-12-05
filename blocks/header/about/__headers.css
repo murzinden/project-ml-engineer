@@ -1,0 +1,141 @@
+
+.header {
+	padding: 35px 0 15px 0;
+	position: relative;
+	/* z-index: 12; */
+}
+.header__nav {
+	z-index: 15;
+}
+@media (max-width: 961px) {
+	.header__top {
+		background: url(../../../images/radius.svg) 50px   , url(../../../images/radius.svg) right ;
+	}
+}
+@media (max-width: 500px) {
+	.header__top {
+		background: url(../../../images/radius-mobile.svg) left / 280px no-repeat, url(../../../images/radius-mobile.svg) right / 280px no-repeat ;
+	}
+}
+.header__about {
+	max-width: 1550px;
+}
+
+.header__container {
+	max-width: 1920px;
+	padding: 0 50px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: start
+}
+
+@media (max-width: 1380px) {
+	.header__container {
+		max-width: 1300px;
+		padding: 0 70px;
+	}
+}
+
+@media (max-width: 961px) {
+	.header__container {
+		max-width: 941px;
+		padding: 0 10px;
+	}
+	
+	.header {
+		padding: 20px 0 15px 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.header__container {
+		max-width: 460px;
+		align-items: center;
+	}
+
+	.header {
+		padding: 15px 0 15px 0;
+	}
+}
+
+.header__logo {
+	width: 143px;
+	height: 50px;
+}
+
+.burger__menu {
+	display: none;
+}
+
+@media (max-width: 961px) {
+	.burger__menu {
+		width: 60px;
+		height: 60px;
+		display: block;
+		cursor: pointer;
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	.header__logo {
+		width: 130px;
+		height: 44px;
+	}
+}
+
+@media (max-width: 500px) {
+	.burger__menu {
+		width: 44px;
+		height: 44px;
+		display: block;
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	.header__logo {
+		width: 80px;
+		height: 27px;
+	}
+}
+
+.header__list:not(:last-child) {
+	margin-bottom: 2px;
+}
+
+.header__list {
+	transition: all .5s ease;
+}
+
+.header__list:hover {
+	transform: scale(1.1);
+}
+
+.header__link {
+	color: var(--white-ff, #FFF);
+	font-weight: 800;
+	line-height: 1.24;
+	text-transform: uppercase;
+}
+
+.header__link:hover {
+	transform: scale(1.2);
+	color: var(--blue, #5868FC);
+}
+
+.header__link:active {
+	transform: scale(1.2);
+	color: #6370E7;
+}
+
+
+
+
+
+
+
+
